@@ -1,4 +1,4 @@
-function mouvement_cible () {
+function core () {
     while (y <= 4) {
         led.unplot(x, y)
         y += 1
@@ -45,5 +45,5 @@ y1 = 4
 score = 0
 led.plot(x1, y1)
 basic.forever(function () {
-    mouvement_cible()
+    core()
 })
